@@ -1,4 +1,4 @@
-Fork of [latex-to-unicode.js](https://github.com/jamesplease/latex-to-unicode.js) by [@jamesplease](github.com/jamesplease).
+Fork of [latex-to-unicode.js](https://github.com/jamesplease/latex-to-unicode.js) by [@jamesplease](https://github.com/jamesplease).
 Corrects issue where repeat occurrences of LaTeX expressions are not parsed correctly (or not parsed at all).
 
 # latex-to-unicode.js

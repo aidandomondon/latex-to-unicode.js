@@ -20,7 +20,7 @@ var attemptReplace = function(obj, key) {
 // that it finds. It also handles grouped symbols, as in:
 // \frak{ABC}
 function applyModifier(text, modifier, obj) {
-  text = text.replace(modifier, '^');
+  text = text.replaceAll(modifier, '^');
   var newText = '', mode = 'normal', i, unit;
 
   for (i = 0; i < text.length; i++) {
@@ -56,7 +56,7 @@ module.exports = function(str) {
   // Replace all of our symbols
   Object.keys(symbols).forEach(function(key) {
     var val = symbols[key];
-    str = str.replace(key, val);
+    str = str.replaceAll(key, val);
   });
 
   // Apply all of the modifiers
